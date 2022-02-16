@@ -9,7 +9,7 @@ public class PlayerX : MonoBehaviour
     public TextMeshProUGUI textScore;
     [SerializeField] float moveSpeed;
     [SerializeField] float jumpSpeed;
-    public float score;
+    public float score; // SCORE
     public float horizontalInput;
     public float verticalInput;
     // Start is called before the first frame update
@@ -22,7 +22,7 @@ public class PlayerX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontalInput = Input.GetAxis("Mouse X");
+        horizontalInput = Input.GetAxis("Mouse X"); // THAT'S CURRENTLY USED
         verticalInput = Input.GetAxis("Mouse Y");
 
         // MOVE WITH VELOCITY
@@ -56,7 +56,7 @@ public class PlayerX : MonoBehaviour
         textScore.text = "EATING: " + score;
 
 
-        if (score == 5) // DO AWESOME THING
+        if (score  ==  5) // DO AWESOME THING
         {
             //textHighScore.gameObject.SetActive(true);
             //enemySound.PlayOneShot(higherScore);
